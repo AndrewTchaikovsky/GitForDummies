@@ -93,3 +93,60 @@ merge the specified branch’s history into the current one
 git log
 show all commits in the current branch’s history
 ```
+
+# INSPECT & COMPARE
+
+
+Examining logs, diffs and object information
+```
+git log
+show the commit history for the currently active branch
+
+git log branchB..branchA
+show the commits on branchA that are not on branch
+
+git log --follow [file]
+show the commits that changed file, even across renames
+
+git diff branchB...branchA
+show the diff of what is in branchA that is not in branch
+
+git show [SHA]
+show any object in Git in human-readable format
+```
+
+# TRACKING PATH CHANGES
+
+
+Versioning file removes and path changes
+```
+git rm [file]
+delete the file from project and stage the removal for commit
+
+git mv [existing-path] [new-path]
+change an existing file path and stage the move
+
+git log --stat -M
+show all commit logs with indication of any paths that moved
+```
+
+# SHARE & UPDATE
+
+
+Retrieving updates from another repository and updating local repos
+```
+git remote add [alias] [url]
+add a git URL as an alias
+
+git fetch [alias]
+fetch down all the branches from that Git remote
+
+git merge [alias]/[branch]
+merge a remote branch into your current branch to bring it up to date
+
+git push [alias] [branch]
+Transmit local branch commits to the remote repository branch
+
+git pull
+fetch and merge any commits from the tracking remote branch
+```
