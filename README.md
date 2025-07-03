@@ -1,4 +1,12 @@
-# INSTALLATION & GUIS
+# GIT CHEAT SHEET
+
+
+Git is the free and open source distributed version control system that's responsible for everything GitHub
+related that happens locally on your computer. This cheat sheet features the most important and commonly
+used Git commands for easy reference.
+
+
+## INSTALLATION & GUIS
 
 
 With platform specific installers for Git, GitHub also provides the
@@ -22,7 +30,7 @@ the official Git web site.
 **Git for All Platforms**  
 htp://git-scm.com
 
-# SETUP
+## SETUP
 
 
 Configuring user information used across all local repositories
@@ -37,7 +45,7 @@ git config --global color.ui auto
 set automatic command line coloring for Git for easy reviewing
 ```
 
-# SETUP & INIT
+## SETUP & INIT
 
 
 Configuring user information, initializing and cloning repositories
@@ -49,7 +57,7 @@ git clone [url]
 retrieve an entire repository from a hosted location via URL
 ```
 
-# STAGE & SNAPSHOT
+## STAGE & SNAPSHOT
 
 
 Working with snapshots and the Git staging area
@@ -73,7 +81,7 @@ git commit -m “[descriptive message]”
 commit your staged content as a new commit snapshot
 ```
 
-# BRANCH & MERGE
+## BRANCH & MERGE
 
 
 Isolating work in branches, changing context, and integrating changes
@@ -94,7 +102,7 @@ git log
 show all commits in the current branch’s history
 ```
 
-# INSPECT & COMPARE
+## INSPECT & COMPARE
 
 
 Examining logs, diffs and object information
@@ -115,7 +123,7 @@ git show [SHA]
 show any object in Git in human-readable format
 ```
 
-# TRACKING PATH CHANGES
+## TRACKING PATH CHANGES
 
 
 Versioning file removes and path changes
@@ -130,7 +138,7 @@ git log --stat -M
 show all commit logs with indication of any paths that moved
 ```
 
-# SHARE & UPDATE
+## SHARE & UPDATE
 
 
 Retrieving updates from another repository and updating local repos
