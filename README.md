@@ -1,3 +1,109 @@
+# 📘 Git Tips & Best Practices
+
+## 📌 Git Commit Messages
+
+Well-written commit messages make your project easier to maintain and collaborate on. They help you (and others) understand *what* changed and *why* — without having to dig into the code.
+
+### ✅ Guidelines for a Good Commit Message
+
+* Keep it short (ideally **≤ 72 characters**)
+* Make it informative — describe what changed, where, and why
+* Avoid vague messages like `fixes`, `updates`, or `misc`
+
+#### 💡 Examples
+
+| Good                                    | Bad             |
+| --------------------------------------- | --------------- |
+| `Fix typo in homepage title (Croatian)` | `Some fixes`    |
+| `Optimize image loading in gallery`     | `updated stuff` |
+
+---
+
+### 🛠️ Common Commit Message Styles
+
+#### 🔹 Corporate (Jira-style)
+
+Prefix the message with a task ID (e.g., from Jira):
+
+```bash
+LGS-239: Add Easter egg list to admin panel
+```
+
+#### 🔹 Conventional Commits
+
+Use `type: message` format. Common types include:
+
+* `feat` – a new feature
+* `fix` – a bug fix
+
+```bash
+feat: add weekly revenue report
+fix: handle empty fields in form
+```
+
+#### 🔹 GitHub Issue Reference
+
+Link to issues directly in the message using `#issueNumber`:
+
+```bash
+Fix #42: correct broken chart on dashboard
+```
+
+---
+
+### 🌍 Language Tips
+
+* **Russian**: use the **infinitive** (e.g. `Добавить`, `Исправить`)
+* **English**: use the **imperative** (e.g. `Add`, `Fix`, `Update`)
+
+---
+
+## 🔍 Git File Status & `git status`
+
+Understanding file states is crucial for using Git effectively. A file in Git can be in one of several states:
+
+* **Untracked** – newly created, not yet staged or committed
+* **Tracked** – already committed or staged
+* **Staged** – added to the staging area (via `git add`), ready for commit
+* **Modified** – changed after last commit or staging
+
+### 🔄 File Lifecycle in Git
+
+```text
+untracked → staged → committed → modified → staged → committed → ...
+```
+
+### 🧪 What `git status` Shows
+
+* **Staged** → `Changes to be committed`
+* **Modified** → `Changes not staged for commit`
+* **Untracked** → `Untracked files`
+
+> Tip: If you edit a file after staging it, run `git add` again to stage the updated version.
+
+---
+
+## 🔐 Git Commit Internals
+
+Behind the scenes, Git relies on hashes and pointers to track commits and changes.
+
+* Each commit is identified by a **40-character SHA-1 hash**
+* The same content always produces the same hash (deterministic)
+* Git stores all commit data (including hashes) in the hidden `.git` folder
+* Use `git log` to view commit history
+* Use `git log --oneline` for a concise version (with shortened hashes)
+
+### 🧠 Understanding `HEAD`
+
+* `HEAD` is a special pointer to the **latest commit** on your current branch
+* You can use `HEAD` in place of a full commit hash in most Git commands
+
+### 👨‍💻 Historical Note
+
+Git was created by **Linus Torvalds** in **April 2005** to manage the Linux kernel source code.
+
+
+
 # GIT CHEAT SHEET
 
 
