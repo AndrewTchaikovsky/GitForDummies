@@ -1,3 +1,15 @@
+HEAD -- это голова.
+Коммит -- это всему голова.
+Статусы файлов:
+
+```mermaid
+graph LR;
+  untracked["Untracked"] -- "git add" --> staged["Staged"];
+  staged -- "git commit -m 'message'" --> committed["Committed"];
+  committed -- "Edit file" --> modified["Modified"];
+  modified -- "git add" --> staged;
+```
+
 # 📘 Git Tips & Best Practices
 
 ## 📌 Git Commit Messages
